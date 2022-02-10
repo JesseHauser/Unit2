@@ -85,6 +85,7 @@ that.
 
 #print starting board 
 board = [[1,2,3], [4,5,6], [7,8,9]]
+
 print (f"{board[0][0]} | {board[0][1]} | {board[0][2]}")
 print ("---------")
 print (f"{board[1][0]} | {board[1][1]} | {board[1][2]}")
@@ -92,7 +93,7 @@ print ("---------")
 print (f"{board[2][0]} | {board[2][1]} | {board[2][2]}")
 
 #player turn
-turn = int(input("pick a number to place your x:"))
+turn = int(input("pick a number to place your x: "))
 
 if turn == 1:
     board[0][0] = 'x'
@@ -112,9 +113,12 @@ elif turn == 8:
     board[2][1] = 'x'
 elif turn == 9: 
     board[2][2] = 'x'
+else: 
+    print ("not a valid input")
+
+
 
 # update board
-board = [[1,2,3], [4,5,6], [7,8,9]]
 print (f"{board[0][0]} | {board[0][1]} | {board[0][2]}")
 print ("---------")
 print (f"{board[1][0]} | {board[1][1]} | {board[1][2]}")
